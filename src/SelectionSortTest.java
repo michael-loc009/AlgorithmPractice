@@ -174,7 +174,7 @@ public class SelectionSortTest {
      smaller (smaller than pivot) to left of 
      pivot and all greater elements to right 
      of pivot */
-    static int partition(int arr[], int low, int high) {
+    static int Partition(int arr[], int low, int high) {
 
         //i for green zone greater than pivot
         //j for red zone smaller than pivot
@@ -208,7 +208,7 @@ public class SelectionSortTest {
         if (low < high) {
             /* pi is partitioning index, arr[pi] is  
              now at right place */
-            int pi = partition(arr, low, high);
+            int pi = Partition(arr, low, high);
 
             // Recursively sort elements before 
             // partition and after partition 
